@@ -612,6 +612,10 @@
             menuBtn.addEventListener("click", () => {
                 navlinks.classList.toggle("mobile-menu");
             });
+            document.querySelector(".cform").addEventListener("submit", function(e){
+                    e.preventDefault(); // Stop page reload
+                    alert("Form Submitted Successfully!");
+                });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="script.js"></script>
